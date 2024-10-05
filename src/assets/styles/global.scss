@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+$font: "Ubuntu", system-ui;
+$black: #212529;
+$white: #fff;
+$hover-color: #00ffc6;
+$shadow: -4px -4px 15px rgba(255, 255, 255, 0.2),
+    8px 8px 15px rgba(0, 0, 0, 0.3);
+$hover-shadow: -4px -4px 15px rgba(0, 0, 0, 0.1),
+    8px 8px 15px rgba(255, 255, 255, 0.2);
+
+html,
+body {
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.f-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.f-column {
+    flex-direction: column;
+}
+
+.f-between {
+    justify-content: space-between;
+}
+
+.f-around {
+    justify-content: space-around;
+}
+
+.f-start {
+    justify-content: start;
+}
+
+.f-align-start {
+    align-items: start;
+}
+
+.f-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.f-align-center {
+    align-items: center;
+}
+
+.f-justify-center {
+    justify-content: center;
+}
+
+.bg-black {
+    background-color: $black;
+    color: $white;
+}
+
+.bg-white {
+    background-color: $white;
+    color: $black;
+}
+
+.container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: $font;
+}
+
+.page-container {
+    height: 100%;
+    width: 100%;
+    section {
+        height: 100vh;
+        width: 100%;
+        .section-content-container {
+            margin: 1em;
+            height: 96%;
+            .section-heading {
+                text-align: center;
+            }
+            .section-content {
+                height: 100%;
+                width: 100%;
+                justify-content: space-around;
+                .min-sec {
+                    width: 35%;
+                }
+                .max-sec {
+                    width: 60%;
+                    gap: 2em;
+                    .content-context {
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    font-size: 5em;
+}
+h2 {
+    font-size: 4em;
+}
+h3 {
+    font-size: 3em;
+}
+h4 {
+    font-size: 1.5em;
+}
+p,
+div,
+span {
+    font-size: 1em;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+h4 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 35em) {
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+    h3 {
+        font-size: 1.4em;
+    }
+    h4 {
+        font-size: 1.2em;
+    }
+    p,
+    div,
+    span {
+        font-size: 1em;
+    }
+}
+
+@mixin button($bg, $c) {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 100px;
+    width: max-content;
+    font-size: 20px;
+    border: none;
+    background-color: $bg;
+    color: $c;
+    transition: 0.5s ease;
+    &:hover {
+        color: $black;
+        background-color: $hover-color;
+    }
+}
