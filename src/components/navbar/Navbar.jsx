@@ -16,20 +16,19 @@ const NavBar = () => {
 
                 <nav className="flex f-around">
                     <div className="link-container flex f-center">
-                        <Link className="link">
+                        <Link to="/data-center" className="link">
                             Data Centers <i class="bx bxs-down-arrow"></i>
                         </Link>
                         <div className="dropdown f-column">
-                            <Link className="link">Americas Data Centers</Link>
-                            <Link className="link">
-                                Europe, Middle East, and Africa Data Centers
+                            <Link to="/colocation-services" className="link">
+                                Colocation Services
                             </Link>
-                            <Link className="link">
-                                Asia-Pacific Data Centers
+                            <Link to="/datacenter-excellence" className="link">
+                                Datacenter excellence
                             </Link>
-                            <Link className="link">Colocation Services</Link>
-                            <Link className="link">Datacenter excellence</Link>
-                            <Link className="link">Ecosystem Discovery</Link>
+                            <Link to="/ecosystem-discovery" className="link">
+                                Ecosystem Discovery
+                            </Link>
                         </div>
                     </div>
                     <div className="link-container flex f-center">

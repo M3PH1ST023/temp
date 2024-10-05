@@ -160,69 +160,61 @@ h4 {
     font-size: 1em;
   }
 }
-header {
-  position: fixed;
-  width: 100%;
-  height: 75px;
-  top: 0px;
-  left: 0px;
-  z-index: 1000;
-  background-color: #fff;
-  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
+.sub-page-container {
+  height: -moz-max-content;
+  height: max-content;
 }
-header .logo {
-  position: relative;
-  height: 90%;
-  top: 5%;
-  left: 1%;
-}
-header .logo img {
+.sub-page-container .main-content {
+  margin-top: 2em;
   height: 100%;
-  width: 125%;
+  width: 100%;
 }
-header .nav-toggle {
-  display: none;
+.sub-page-container .main-content h2 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.sub-page-container .main-content h3 {
+  margin-bottom: 2em;
+}
+.sub-page-container .main-content img {
+  height: 70%;
+  width: 60%;
+}
+.sub-page-container .main-content p {
   font-size: 2em;
+  width: 70%;
 }
-header nav .link-container {
+.sub-page-container .cards {
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  gap: 20px;
+}
+.sub-page-container .cards .card {
+  color: #fff;
+  background-color: #212529;
+  width: 60%;
+  border: 2px solid #212529;
   padding: 20px;
-  position: relative;
-}
-header nav .link-container .link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  text-decoration: none;
-  color: #212529;
+  border-radius: 10px;
   transition: 0.3s ease;
 }
-header nav .link-container .link .bx {
-  font-size: 10px;
+.sub-page-container .cards .card .icon {
+  width: 30%;
 }
-header nav .link-container .link:hover {
-  scale: 1.2;
+.sub-page-container .cards .card .icon img {
+  padding: 5px;
+  border-radius: 5px;
+  height: 100px;
+  width: 100px;
+  background-color: #f7f7f7;
 }
-header nav .link-container .dropdown {
-  position: absolute;
-  width: -moz-max-content;
-  width: max-content;
-  top: 100%;
-  left: 0px;
-  display: none;
-  background-color: #fff;
+.sub-page-container .cards .card .content {
+  width: 60%;
 }
-header nav .link-container .dropdown .link {
-  border: 1px solid #212529;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  text-align: left;
+.sub-page-container .cards .card .content h4 {
+  font-weight: bold;
 }
-header nav .link-container .dropdown .link:hover {
-  scale: 1;
-  text-decoration: underline;
-}
-header nav .link-container:hover .dropdown {
-  display: flex;
-}/*# sourceMappingURL=NavBar.css.map */
+.sub-page-container .cards .card:hover {
+  scale: 1.1;
+}/*# sourceMappingURL=colocation.css.map */
